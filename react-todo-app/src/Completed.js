@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-export default function Completed({ defaultChecked = false }) {
-  const [checked, setChecked] = useState(defaultChecked);
+export default function Completed({name, done }) {
+  const [checked, setChecked] = useState(false);
 
   return (
     <>
       {!checked && (
-        <button type="button" className="btn" onClick={() => setChecked(true)}>
-          TASK
+        <button defaultChecked={done} type="button" className="btn" onClick={() => setChecked(true)}>
+          {name}
         </button>
       )}
 
       {checked && (
-        <button type="button" className="btn">
-          <s>TASK</s>
+        <button defaultChecked={done} type="button" className="btn">
+          <s>{name}</s>
         </button>
       )}
     </>
