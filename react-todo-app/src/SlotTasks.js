@@ -6,6 +6,7 @@ export default function SlotTasksonAdd({onAdd}) {
 		ev.preventDefault();
 		onAdd(taskName);
 		setTaskName(' ')
+
 	}
 	return (
 		<form onSubmit={handleSubmit}>

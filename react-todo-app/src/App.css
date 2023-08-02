@@ -35,3 +35,17 @@ button.btn{
   color: orange;
   width: 300px;
 }
+s{
+  color: greenyellow;
+  border-color: greenyellow;
+}
+button.btnDone{
+  background-color: rgba(37, 37, 37, 0.908);
+  border: 3px solid rgb(145, 69, 10);
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  color: orange;
+  width: 300px;
+  border-color: greenyellow;
+}
