@@ -49,3 +49,7 @@ button.btnDone{
   width: 300px;
   border-color: greenyellow;
 }
+svg{
+  width: 20px; 
+  height: 20px;
+}
