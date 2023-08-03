@@ -21,6 +21,7 @@ function App() {
     setTasks(prev =>{
       return prev.filter((taskObject, index)=> index !== indexToRemove);
       })
+    setNum((prevNum) => prevNum - 1);
     }
 
   function getMessage() {
