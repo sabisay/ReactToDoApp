@@ -17,12 +17,12 @@ function App() {
     setNum((prevNum) => prevNum + 1);
   }
 
-  function removeTask(indexToRemove){
-    setTasks(prev =>{
-      return prev.filter((taskObject, index)=> index !== indexToRemove);
-      })
-    setNum((prevNum) => prevNum - 1);
-    }
+   function removeTask(indexToRemove){
+     setTasks(prev =>{
+       return prev.filter((taskObject, index)=> index !== indexToRemove);
+       })
+     setNum((prevNum) => prevNum - 1);
+     }
 
   function getMessage() {
     const percentage = (num / numberTotal) * 100;
@@ -41,10 +41,7 @@ function App() {
 
   return (
     <main>
-      <h2>
-        {" "}
-        {num}/{numberTotal} Completed
-      </h2>
+      <h3>{num} / {numberTotal}</h3>
       <h3>{getMessage()}</h3>
       <SlotTasks onAdd={addTask} />
       {tasks.map((task, index) => (
