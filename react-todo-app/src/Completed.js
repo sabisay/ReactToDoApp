@@ -30,9 +30,15 @@ export default function Completed({ name, done, onToggle, onTrash }) {
           <td>
             <svg
               type="button"
-              onClick={() => {
+              onClick={(button) => {
                 setChecked(false);
-                onTrash();
+                if(checked === true){
+                  onTrash(); 
+                }else{
+                  onTrash();
+                  onToggle();
+                  
+                }
               }}
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
